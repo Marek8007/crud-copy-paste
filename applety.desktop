@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Applety
+Comment=Mini utilidad de bandeja para textos rápidos
+Exec=/home/koibox/Escritorio/applety/run.sh
+Icon=/home/koibox/Escritorio/applety/assets/applety.svg
+Terminal=false
+X-GNOME-Autostart-enabled=true
+StartupNotify=false
