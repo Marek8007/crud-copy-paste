@@ -1,15 +1,17 @@
-# Applety
+# crud-copy-paste
+Utilidad de bandeja construida con PySide6 para gestionar fragmentos de texto reutilizables con persistencia local y copia con un solo clic.
+--------------------------------------------------------------------------------------------------------------------------------------------
+Tray utility built with PySide6 for managing reusable text snippets with local persistence and one-click copy.
 
-Mini utilidad de bandeja para KDE Plasma.
+A nivel de sistema, esta app tiene estas limitaciones:
 
-## Uso
+- Está pensada para Linux con entorno gráfico.
+- Está hecha con PySide6/Qt, así que necesita tener Python y las dependencias instaladas.
+- Depende de que haya bandeja del sistema; si la sesión no la soporta bien, el icono puede no funcionar como esperas.
+- La persistencia es local: guarda los textos en un JSON junto a la app, no en la nube.
+- No tiene cifrado ni protección especial de los textos guardados.
+- No está pensada para ejecutar en segundo plano como servicio del sistema; es una app de usuario normal.
+- Está optimizada para KDE/Plasma, así que en otros escritorios puede verse o comportarse distinto.
+- El portapapeles funciona con el portapapeles normal del sistema, pero no hace historial ni sincronización entre dispositivos.
 
-1. Edita `applet.py` y cambia los textos de `TEXT_ITEMS`.
-2. Ejecuta `./run.sh`.
-
-## Notas
-
-- La ventana se abre cerca del cursor para que quede accesible al hacer clic en el icono.
-- Si quieres que se abra exactamente en otra posición, se puede ajustar luego.
-- El icono que usa la app sale del tema de iconos de KDE si existe el SVG local; en Plasma normalmente ese tema es `Breeze`.
-- Para probar iconos del tema, en KDE suelen servir nombres como `edit-copy`, `edit-paste`, `document-new`, `view-pdu`, `dialog-information`, `folder`, `starred`, `favorites`, `emblem-favorite`.
+  <img width="559" height="623" alt="image" src="https://github.com/user-attachments/assets/21481c4c-7887-4e74-84bd-36db9e238572" />
